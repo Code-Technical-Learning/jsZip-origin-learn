@@ -48,6 +48,7 @@ exports.generateWorker = function (zip, options, comment) {
             let dir = file.dir,
                 date = file.date;
 
+            // 使用 zipObject 文件的 _compressWorker
             file._compressWorker(compression, compressionOptions)
                 .withStreamInfo("file", {
                     name: relativePath,
