@@ -169,7 +169,7 @@ function isRegExp(object) {
     return Object.prototype.toString.call(object) === "[object RegExp]";
 }
 
-// return the actual prototype of JSZip
+// 让使用者调用的 Api
 let out = {
     /**
      * @see loadAsync

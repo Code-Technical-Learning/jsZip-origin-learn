@@ -334,6 +334,7 @@ let generateDataDescriptors = function (streamInfo) {
 
 /**
  * A worker to concatenate other workers to create a zip file.
+ * 连接其他 worker 以创建 zip 文件的 worker，用于调用自身 Api 生成压缩包的信息
  * @param {Boolean} streamFiles `true` to stream the content of the files,
  * `false` to accumulate it.
  * @param {String} comment the comment to use.

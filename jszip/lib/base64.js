@@ -5,7 +5,7 @@ let support = require("./support");
 let _keyStr =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
 
-// public method for encoding
+// 公共的 base64 编码解码方法
 exports.encode = function (input) {
     let output = [];
     let chr1, chr2, chr3, enc1, enc2, enc3, enc4;

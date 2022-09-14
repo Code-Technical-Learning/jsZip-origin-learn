@@ -8,7 +8,7 @@ let GenericWorker = require("./GenericWorker");
 let DEFAULT_BLOCK_SIZE = 16 * 1024;
 
 /**
- * A worker that reads a content and emits chunks.
+ * 读取内容并且 emit chunks 的 worker
  * @constructor
  * @param {Promise} dataP the promise of the data to split
  */

@@ -4,7 +4,7 @@ let compressions = require("../compressions");
 let ZipFileWorker = require("./ZipFileWorker");
 
 /**
- * Find the compression to use.
+ * 找到要使用的压缩.
  * @param {String} fileCompression the compression defined at the file level, if any.
  * @param {String} zipCompression the compression defined at the load() level.
  * @return {Object} the compression object to use.
@@ -22,6 +22,7 @@ let getCompression = function (fileCompression, zipCompression) {
 
 /**
  * Create a worker to generate a zip file.
+ * 创建一个工作者去生成文件
  * @param {JSZip} zip the JSZip instance at the right root level.
  * @param {Object} options to generate the zip file.
  * @param {String} comment the comment to use.

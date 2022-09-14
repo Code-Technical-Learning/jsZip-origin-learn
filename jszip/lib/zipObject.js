@@ -91,6 +91,7 @@ ZipObject.prototype = {
 
     /**
      * Return a worker for the compressed content.
+     * 返回压缩内容的工作者
      * @private
      * @param {Object} compression the compression object to use.
      * @param {Object} compressionOptions the options to use when compressing.

@@ -4,7 +4,7 @@ let utils = require("../utils");
 let GenericWorker = require("./GenericWorker");
 
 /**
- * A worker which calculate the total length of the data flowing through.
+ * 计算流过的数据总长度的 worker
  * @constructor
  * @param {String} propName the name used to expose the length
  */

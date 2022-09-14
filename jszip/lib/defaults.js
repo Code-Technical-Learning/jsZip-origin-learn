@@ -1,4 +1,5 @@
 "use strict";
+// 默认值的配置文件
 exports.base64 = false;
 exports.binary = false;
 exports.dir = false;

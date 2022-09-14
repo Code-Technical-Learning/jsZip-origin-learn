@@ -118,6 +118,7 @@ function accumulate(helper, updateCallback) {
 
 /**
  * An helper to easily use workers outside of JSZip.
+ * 主要调用其他 worker 的 助手
  * @constructor
  * @param {Worker} worker the worker to wrap
  * @param {String} outputType the type of data expected by the use

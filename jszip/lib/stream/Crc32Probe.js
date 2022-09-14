@@ -6,6 +6,7 @@ let utils = require("../utils");
 
 /**
  * A worker which calculate the crc32 of the data flowing through.
+ * 计算流经数据的 crc32 的 worker
  * @constructor
  */
 function Crc32Probe() {

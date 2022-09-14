@@ -1,4 +1,5 @@
 "use strict";
+// 支持的类型检查
 
 exports.base64 = true;
 exports.array = true;
@@ -9,6 +10,7 @@ exports.nodebuffer = typeof Buffer !== "undefined";
 // contains true if JSZip can read/generate Uint8Array, false otherwise.
 exports.uint8array = typeof Uint8Array !== "undefined";
 
+// 检查是否支持blob
 if (typeof ArrayBuffer === "undefined") {
     exports.blob = false;
 } else {
@@ -19,6 +21,7 @@ if (typeof ArrayBuffer === "undefined") {
                 type: "application/zip",
             }).size === 0;
     } catch (e) {
+        // 兼容其他浏览器的blob
         try {
             let Builder =
                 self.BlobBuilder ||
