@@ -4,7 +4,7 @@ let GenericWorker = require("./GenericWorker");
 let utils = require("../utils");
 
 /**
- * A worker which convert chunks to a specified type.
+ * 将 chunks 转换为指定类型的工作者,继承了一些 GenericWorker 流转信息的功能
  * @constructor
  * @param {String} destType the destination type.
  */

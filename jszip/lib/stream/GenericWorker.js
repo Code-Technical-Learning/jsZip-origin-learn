@@ -11,6 +11,12 @@
  * object containing anything (`percent` for example), see each worker for more
  * details. The latter is the real data (String, Uint8Array, etc).
  *
+ *
+ * 一个除了将块传递给下一个之外什么都不做的工人。这就像一个 nodejs 流，但有一些区别。好的方面：
+ * - 它可以在 IE 6-9 上运行，没有任何问题 polyfill - 它的权重小于与 browserify 捆绑的完整依赖项
+ * - 它转发错误（无需在任何地方声明错误处理程序） 块是具有 2 个属性的对象：“元”和“数据”。前者是一个包含任何内容的对象（例如`percent`），
+ * 请参阅每个工人以获取更多详细信息。后者是真实数据（String、Uint8Array 等）
+ *
  * @constructor
  * @param {String} name the name of the stream (mainly used for debugging purposes)
  */

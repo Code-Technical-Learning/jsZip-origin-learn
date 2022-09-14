@@ -71,7 +71,7 @@ function identity(input) {
 }
 
 /**
- * Fill in an array with a string.
+ * 字符串转换为 数组. NodeBuffer ArrayBuffer
  * @param {String} str the string to use.
  * @param {Array|ArrayBuffer|Uint8Array|Buffer} array the array to fill in (will be mutated).
  * @return {Array|ArrayBuffer|Uint8Array|Buffer} the updated array.
@@ -313,9 +313,7 @@ transform["nodebuffer"] = {
 };
 
 /**
- * Transform an input into any type.
- * The supported output type are : string, array, uint8array, arraybuffer, nodebuffer.
- * If no output type is specified, the unmodified input will be returned.
+ * 将输入转换为任何类型。支持的输出类型有：字符串、数组、uint8array、arraybuffer、nodebuffer。如果未指定输出类型，则返回未修改的输入.
  * @param {String} outputType the output type.
  * @param {String|Array|ArrayBuffer|Uint8Array|Buffer} input the input to convert.
  * @throws {Error} an Error if the browser doesn't support the requested output type.
@@ -364,8 +362,7 @@ exports.resolve = function (path) {
 };
 
 /**
- * Return the type of the input.
- * The type will be in a format valid for JSZip.utils.transformTo : string, array, uint8array, arraybuffer.
+ * 返回输入的类型。该类型将采用对 JSZip.utils.transformTo 有效的格式：string、array、uint8array、arraybuffer
  * @param {Object} input the input to identify.
  * @return {String} the (lowercase) type of the input.
  */
